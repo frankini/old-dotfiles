@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " " let Vundle manage Vundle, required
-Plugin 'gmarik/vundle
+Plugin 'gmarik/vundle'
 
 syntax enable                     " Turn on syntax highlighting.
 
