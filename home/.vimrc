@@ -8,9 +8,12 @@ call vundle#rc()
 " " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 
-syntax enable                     " Turn on syntax highlighting.
+Plugin 'altercation/vim-colors-solarized'
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+filetype plugin indent on         " required
+
+
+syntax enable                     " Turn on syntax highlighting.
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
@@ -61,3 +64,9 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
+
+" Make it look nice
+set number
+set background=dark
+colorscheme solarized
+
