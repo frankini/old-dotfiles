@@ -70,3 +70,6 @@ set number
 set background=dark
 colorscheme solarized
 
+" Do not back up files in the local dir
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swap//
