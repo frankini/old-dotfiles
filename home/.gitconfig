@@ -1,0 +1,23 @@
+[user]
+  name = Steven Frankini
+  email = steven@lightsblink.com
+[alias]
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+  up = pull --rebase
+  punch = blame
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = ~/.gitignore
+[apply]
+  whitespace = nowarn
+[merge]
+  tool = kdiff3
+[difftool]
+  prompt = false
+[push]
+  default = current
+[credential]
+  helper = osxkeychain
