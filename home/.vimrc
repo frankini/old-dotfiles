@@ -9,6 +9,8 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'hallison/vim-ruby-sinatra'
+
 
 filetype plugin indent on         " required
 
