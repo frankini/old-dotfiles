@@ -9,6 +9,8 @@ call vundle#rc()
 Plugin 'gmarik/vundle'
 
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'jplaut/vim-arduino-ino'
+Plugin 'sudar/vim-arduino-syntax'
 Plugin 'hallison/vim-ruby-sinatra'
 
 
