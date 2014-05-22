@@ -1,14 +1,8 @@
-# Set Apple Terminal.app resume directory
-if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
-  function chpwd {
-    local SEARCH=' '
-    local REPLACE='%20'
-    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
-    printf '\e]7;%s\a' "$PWD_URL"
-  }
+#Path
+export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
 
-  chpwd
-}
+# Rbenv
+eval "$(rbenv init -)"
 
 # Load functions and completion
 fpath=(~/.zsh/functions $fpath)
@@ -22,5 +16,23 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 # Pasting with tabs doesn't perform completion
 zstyle ':completion:*' insert-tab pending
 
-# Load files
-for file (~/.zsh/*.zsh) source $file
+# Antigen - plugin manager
+source ~/.antigen/antigen/antigen.zsh
+
+# Load the oh-my-zsh library
+antigen use oh-my-zsh
+
+# Bundles
+antigen bundles <<EOBUNDLES
+
+command-not-found
+
+git
+git-extras
+
+zsh-users/zsh-syntax-highlighting
+
+EOBUNDLES
+
+# Make it so
+antigen apply
