@@ -1,8 +1,17 @@
-#Path
-export PATH="$HOME/bin:$HOME/.rbenv/bin:$PATH"
+# Path
+export PATH="$HOME/bin:$PATH"
 
-# Rbenv
-eval "$(rbenv init -)"
+# Editor
+export EDITOR='vim'
+
+# Timer
+# Print elapsed time when more than 10 seconds
+REPORTTIME=10
+
+# Tetris
+autoload -U tetris
+zle -N tetris
+bindkey  tetris
 
 # Load functions and completion
 fpath=(~/.zsh/functions $fpath)
@@ -29,6 +38,9 @@ command-not-found
 
 git
 git-extras
+
+ruby
+rbenv
 
 zsh-users/zsh-syntax-highlighting
 
