@@ -12,6 +12,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'jplaut/vim-arduino-ino'
 Plugin 'sudar/vim-arduino-syntax'
 Plugin 'hallison/vim-ruby-sinatra'
+Plugin 'bling/vim-airline'
 
 
 filetype plugin indent on         " required
@@ -79,3 +80,5 @@ colorscheme solarized
 " Do not back up files in the local dir
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swap//
+
+let g:airline_powerline_fonts = 1
