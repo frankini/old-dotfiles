@@ -1,0 +1,7 @@
+#!/bin/bash
+
+wall_path=~/Dropbox/Wallpapers/Dark
+
+file=$(find $wall_path -type f | shuf -n1)
+
+feh --bg-scale $file
